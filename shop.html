@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>LensLove</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="wrapper-logo">
+                <div class="logo">
+                    <svg width="156" height="25" viewBox="0 0 156 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.598191 24V0.616279H5.01512V19.8754H15.0831V24H0.598191ZM17.8442 24V0.616279H33.1086V4.74091H22.2611V9.74243H31.1599V13.8671H22.2611V19.8754H33.1086V24H17.8442ZM37.0008 24V0.616279H41.4827L51.6481 16.2054V0.616279H56.13V24H51.6481L41.4827 8.41085V24H37.0008ZM69.4949 24.4872C67.7628 24.4872 66.1985 24.184 64.8019 23.5778C63.4162 22.9607 62.2741 22.0838 61.3756 20.9471C60.4878 19.7996 59.9249 18.4355 59.6867 16.855L64.2985 16.1729C64.6233 17.5153 65.2945 18.5492 66.3121 19.2745C67.3297 19.9999 68.4881 20.3625 69.7872 20.3625C70.5125 20.3625 71.2162 20.2489 71.8982 20.0215C72.5803 19.7942 73.1378 19.4586 73.5708 19.0147C74.0147 18.5709 74.2366 18.0242 74.2366 17.3746C74.2366 17.1364 74.1987 16.9091 74.1229 16.6926C74.058 16.4652 73.9443 16.2541 73.7819 16.0593C73.6195 15.8644 73.3868 15.6804 73.0837 15.5072C72.7914 15.3339 72.4179 15.177 71.9632 15.0362L65.8899 13.25C65.4352 13.1201 64.9048 12.936 64.2985 12.6979C63.7031 12.4597 63.1239 12.1187 62.561 11.6748C61.998 11.231 61.5271 10.6464 61.1482 9.92105C60.7801 9.1849 60.5961 8.25929 60.5961 7.14423C60.5961 5.57449 60.9912 4.26998 61.7815 3.23071C62.5718 2.19143 63.6273 1.41739 64.9481 0.908575C66.2688 0.399763 67.7303 0.150769 69.3325 0.161596C70.9456 0.183247 72.3854 0.459305 73.652 0.989769C74.9186 1.52023 75.9796 2.29428 76.8348 3.3119C77.69 4.3187 78.3071 5.55284 78.686 7.01432L73.9118 7.82626C73.7386 7.06845 73.4193 6.42973 72.9537 5.91009C72.4882 5.39045 71.9307 4.99531 71.2812 4.72467C70.6424 4.45402 69.9712 4.30788 69.2676 4.28622C68.5747 4.26457 67.9198 4.362 67.3027 4.57852C66.6964 4.78421 66.1985 5.08733 65.8087 5.48789C65.4298 5.88844 65.2404 6.36478 65.2404 6.91689C65.2404 7.4257 65.3973 7.8425 65.7113 8.16727C66.0252 8.48122 66.4204 8.73563 66.8967 8.93049C67.3731 9.12535 67.8602 9.28774 68.3582 9.41765L72.4179 10.5219C73.0241 10.6843 73.6953 10.9008 74.4315 11.1714C75.1676 11.4312 75.8713 11.7993 76.5425 12.2757C77.2245 12.7412 77.7821 13.3582 78.2151 14.1269C78.6589 14.8955 78.8809 15.8698 78.8809 17.0498C78.8809 18.3056 78.6156 19.4044 78.0852 20.3463C77.5655 21.2773 76.8619 22.0514 75.9741 22.6684C75.0864 23.2747 74.0796 23.7294 72.9537 24.0325C71.8387 24.3356 70.6857 24.4872 69.4949 24.4872ZM82.7749 24V0.616279H85.1619V21.7103H96.2692V24H82.7749ZM107.87 24.4872C105.543 24.4872 103.578 23.9729 101.976 22.9445C100.374 21.9052 99.1611 20.4708 98.3384 18.6412C97.5156 16.8117 97.1042 14.7006 97.1042 12.3081C97.1042 9.91564 97.5156 7.80461 98.3384 5.97505C99.1611 4.14549 100.374 2.71648 101.976 1.68803C103.578 0.648757 105.543 0.129119 107.87 0.129119C110.209 0.129119 112.174 0.648757 113.765 1.68803C115.367 2.71648 116.58 4.14549 117.403 5.97505C118.236 7.80461 118.653 9.91564 118.653 12.3081C118.653 14.7006 118.236 16.8117 117.403 18.6412C116.58 20.4708 115.367 21.9052 113.765 22.9445C112.174 23.9729 110.209 24.4872 107.87 24.4872ZM107.87 22.1975C109.7 22.1975 111.226 21.7807 112.45 20.9471C113.673 20.1135 114.588 18.9552 115.194 17.472C115.811 15.9781 116.12 14.2568 116.12 12.3081C116.12 10.3595 115.811 8.64361 115.194 7.16047C114.588 5.67734 113.673 4.51898 112.45 3.68539C111.226 2.85181 109.7 2.4296 107.87 2.41877C106.041 2.41877 104.52 2.83557 103.307 3.66915C102.095 4.50274 101.18 5.66651 100.563 7.16047C99.9568 8.64361 99.6483 10.3595 99.6375 12.3081C99.6266 14.2568 99.9244 15.9727 100.531 17.4558C101.148 18.9281 102.068 20.0865 103.291 20.9309C104.514 21.7645 106.041 22.1867 107.87 22.1975ZM126.865 24L118.811 0.616279H121.295L128.424 21.2881L135.602 0.616279H138.086L130.032 24H126.865ZM140.522 24V0.616279H155.137V2.90594H142.91V10.9928H153.189V13.2825H142.91V21.7103H155.137V24H140.522Z"
+                            fill="black" />
+                    </svg>
+                </div>
+                <div class="wrapper-information">
+                    <div class="number">
+                        <h6 class="h6-sm">
+                            0371 525 777
+                        </h6>
+                    </div>
+                    <div class="help">
+                        <h6 class="h6-sm">
+                            Help
+                        </h6>
+                    </div>
+                    <div class="acount">
+                        <h6 class="h6-sm">
+                            Account
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <input class="checkbox" type="checkbox" name="input" id="" />
+            <div class="wrapper-nav">
+                <nav class="navbar">
+                    <a href="shop.html">Shops</a>
+                    <a href="/">Offers</a>
+                    <a href="/">Warranty</a>
+                    <a href="/">Medical</a>
+                    <a href="/">Info</a>
+                    <a href="/">Blog</a>
+                    <a href="/">About us</a>
+                    <a href="/">Contact</a>
+                </nav>
+                <div class="wrapper-icons">
+                    <div class="icon search-icon">
+                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.153 15.747L12.8535 11.5161C13.9794 10.2929 14.6712 8.67509 14.6712 6.89489C14.6707 3.0867 11.534 0 7.66437 0C3.79477 0 0.658081 3.0867 0.658081 6.89489C0.658081 10.7031 3.79477 13.7898 7.66437 13.7898C9.3363 13.7898 10.8698 13.2115 12.0743 12.2501L16.3905 16.4976C16.6008 16.7047 16.9422 16.7047 17.1525 16.4976C17.3633 16.2904 17.3633 15.9541 17.153 15.747ZM7.66437 12.729C4.39027 12.729 1.7361 10.117 1.7361 6.89489C1.7361 3.67281 4.39027 1.06082 7.66437 1.06082C10.9385 1.06082 13.5926 3.67281 13.5926 6.89489C13.5926 10.117 10.9385 12.729 7.66437 12.729Z"
+                                fill="#414141" />
+                        </svg>
+                        <div class="h6-sm">
+                            search
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.14414 8.80841C0.111678 6.47788 0.614575 3.72661 2.23686 2.03652C3.85628 0.349414 6.5587 -0.245866 8.98238 1.79479L8.98243 1.79483C9.37299 2.12358 9.93842 2.1081 10.3148 1.781L10.3148 1.78097C12.5442 -0.15713 15.2905 0.329246 16.9821 1.956C17.8273 2.76872 18.3905 3.85299 18.4856 5.03784C18.5799 6.21232 18.2175 7.5254 17.1436 8.81679L10.2601 16.0112C9.92623 16.3602 9.36908 16.3602 9.03526 16.0113L2.14414 8.80841Z"
+                                stroke="#414141" />
+                        </svg>
+                    </div>
+                    <div class="icon">
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.672966 15.0244L1.47201 5.03632H10.653L11.452 15.0244C11.5228 15.9093 10.8238 16.6665 9.93602 16.6665H2.18895C1.30121 16.6665 0.602173 15.9093 0.672966 15.0244Z"
+                                stroke="#414141" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M3.58252 7.56769V3.52604C3.58252 2.68402 4.08773 1 6.10856 1C8.12938 1 8.63459 2.68402 8.63459 3.52604V7.56769"
+                                stroke="#414141" stroke-linecap="round" stroke-linejoin="round" />
+                            <rect x="6" y="9" width="11" height="8" rx="4" fill="#414141" />
+                            <path
+                                d="M11.8424 15.084C11.5568 15.084 11.3048 15.0233 11.0864 14.902C10.868 14.7788 10.6972 14.608 10.574 14.3896C10.4527 14.1712 10.392 13.9192 10.392 13.6336V12.3344C10.392 12.0488 10.4527 11.7968 10.574 11.5784C10.6972 11.36 10.868 11.1901 11.0864 11.0688C11.3048 10.9456 11.5568 10.884 11.8424 10.884C12.128 10.884 12.3791 10.9456 12.5956 11.0688C12.814 11.1901 12.9848 11.36 13.108 11.5784C13.2312 11.7968 13.2928 12.0488 13.2928 12.3344V13.6336C13.2928 13.9192 13.2312 14.1712 13.108 14.3896C12.9848 14.608 12.814 14.7788 12.5956 14.902C12.3791 15.0233 12.128 15.084 11.8424 15.084ZM11.8424 14.4428C11.9843 14.4428 12.1131 14.4092 12.2288 14.342C12.3445 14.2729 12.436 14.1815 12.5032 14.0676C12.5704 13.9519 12.604 13.8231 12.604 13.6812V12.284C12.604 12.1403 12.5704 12.0115 12.5032 11.8976C12.436 11.7819 12.3445 11.6904 12.2288 11.6232C12.1131 11.5541 11.9843 11.5196 11.8424 11.5196C11.7005 11.5196 11.5717 11.5541 11.456 11.6232C11.3403 11.6904 11.2488 11.7819 11.1816 11.8976C11.1144 12.0115 11.0808 12.1403 11.0808 12.284V13.6812C11.0808 13.8231 11.1144 13.9519 11.1816 14.0676C11.2488 14.1815 11.3403 14.2729 11.456 14.342C11.5717 14.4092 11.7005 14.4428 11.8424 14.4428Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="wrapper-text">
+                    <div class="title">
+                        <h1>Spring Sale</h1>
+                    </div>
+                    <div class="sub-title">
+                        <div class="h2-sm">
+                            Up to -40%
+                        </div>
+                    </div>
+                    <div class="wrapper-button">
+                        <button class="main-btn">See offer</button>
+                    </div>
+                </div>
+                <div class="wrapper-img">
+                    <img src="assets/img/Photo.svg" alt="girl">
+                </div>
+            </div>
+        </section>
+
+        <section class="shop">
+            <div class="container">
+                <div class="wrapper-title">
+                    <h2>Shop</h2>
+                </div>
+                <div class="wrapper-products">
+                    <div class="filters">
+                        <div class="wrapper-h4">
+                            <h4>Filters</h4>
+                        </div>
+                        <input class="checkbox arrow-checkbox" type="checkbox" name="input" id="" />
+                        <div class="checkbox-filters">
+                            <div class="mini-cards">
+                                <div class="wrapper-cards-1">
+                                    <div class="card-1">
+                                        <div class="wrapper-img">
+                                            <img src="assets/img/Icon-lentile contact.svg" alt="">
+                                        </div>
+                                        <div class="wrapper-text">
+                                            <h6 class="h6-sm">Contact Lenses</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-2">
+                                        <div class="wrapper-img">
+                                            <img src="assets/img/Icon-lentile colorate.svg" alt="">
+                                        </div>
+                                        <div class="wrapper-text">
+                                            <h6 class="h6-sm">Colored lenses</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrapper-cards-2">
+                                    <div class="card-1">
+                                        <div class="wrapper-img">
+                                            <img src="assets/img/Icon-calculator.svg" alt="">
+                                        </div>
+                                        <div class="wrapper-text">
+                                            <h6 class="h6-sm">Blue light</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-2">
+                                        <div class="wrapper-img">
+                                            <img src="assets/img/Icon-sport.svg" alt="">
+                                        </div>
+                                        <div class="wrapper-text">
+                                            <h6 class="h6-sm">Sports</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrapper-cards-3">
+                                    <div class="card-1">
+                                        <div class="wrapper-img">
+                                            <img src="assets/img/Icon-soare.svg" alt="">
+                                        </div>
+                                        <div class="wrapper-text">
+                                            <h6 class="h6-sm">Sunwear</h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-2">
+                                        <div class="wrapper-img">
+                                            <img src="assets/img/Icon-vedere.svg" alt="">
+                                        </div>
+                                        <div class="wrapper-text">
+                                            <h6 class="h6-sm">Optical</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-checkbox">
+                                <div class="container">
+                                    <div class="wrapper-title">
+                                        <h4>Availability</h4>
+                                    </div>
+                                    <div class="wrapper-checkbox">
+                                        <div class="checkbox">
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="1">
+                                                    <label for="1">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="2">
+                                                    <label for="2">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="3">
+                                                    <label for="3">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="4">
+                                                    <label for="4">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="5">
+                                                    <label for="5">Lorem Ipsum</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-checkbox-2">
+                                <div class="container">
+                                    <div class="wrapper-title">
+                                        <h4>Price</h4>
+                                    </div>
+                                    <div class="wrapper-checkbox">
+                                        <div class="checkbox">
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="6">
+                                                    <label for="6">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="7">
+                                                    <label for="7">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="8">
+                                                    <label for="8">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="9">
+                                                    <label for="9">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="10">
+                                                    <label for="10">Lorem Ipsum</label>
+                                                </div>
+                                                <hr>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="11">
+                                                    <label for="11">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="wrapper-input">
+                                                    <input class="text" type="text">
+                                                    <img src="assets/img/Vector-line.svg" alt="">
+                                                    <input class="text" type="text">
+                                                    <button class="submit"><img src="assets/img/Vector-104.svg"
+                                                            alt=""></button>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-checkbox-3">
+                                <div class="container">
+                                    <div class="wrapper-title">
+                                        <h4>Brand</h4>
+                                    </div>
+                                    <div class="wrapper-checkbox">
+                                        <div class="checkbox">
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="12">
+                                                    <label for="12">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="13">
+                                                    <label for="13">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="14">
+                                                    <label for="14">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="15">
+                                                    <label for="15">Lorem Ipsum</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="checkbox" id="16">
+                                                    <label for="16">Lorem Ipsum</label>
+                                                </div>
+                                                <hr>
+                                                <div class="wrapper-buttonlink">
+                                                    <button><a href="">More (98)</a><img src="assets/img/Vector-101.svg"
+                                                            alt=""></button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-stars">
+                                <div class="container">
+                                    <div class="wrapper-title">
+                                        <h4>Rating</h4>
+                                    </div>
+                                    <div class="wrapper-stars">
+                                        <div class="stars">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <div class="text">
+                                                <h5>589</h5>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star.svg" alt="">
+                                            <div class="text">
+                                                <h5>461</h5>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star.svg" alt="">
+                                            <div class="text">
+                                                <h5>203</h5>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star.svg" alt="">
+                                            <div class="text">
+                                                <h5>50</h5>
+                                            </div>
+                                        </div>
+                                        <div class="stars">
+                                            <img class="star" src="assets/img/Vector-star-orange.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star.svg" alt="">
+                                            <img class="star" src="assets/img/Vector-star.svg" alt="">
+                                            <div class="text">
+                                                <h5>18</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div class="container">
+                            <div class="wrapper-menu">
+                                <div class="filter-section">
+                                    <div class="wrapper-filters">
+                                        <div class="filter-1">
+                                            <button class="btn-filter">Filter<img src="assets/img/Group 42.svg"
+                                                    alt=""></button>
+                                        </div>
+                                        <div class="filter-2">
+                                            <button class="btn-filter">Filter<img src="assets/img/Group 42.svg"
+                                                    alt=""></button>
+                                        </div>
+                                        <div class="filter-3">
+                                            <button class="btn-filter">Filte<img src="assets/img/Group 42.svg"
+                                                    alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="wrapper-results">
+                                        <h5 class="results">23 results</h5>
+                                    </div>
+                                </div>
+                                <div class="wrapper-sort">
+                                    <button class="sort">Sort by <img src="assets/img/Sort by.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <div class="wrapper-cards">
+                                <div class="cards-block">
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="assets/img/glass.svg" alt="glass">
+                                        <div class="card-body">
+                                            <div class="title">
+                                                <h4>
+                                                    Model Name
+                                                </h4>
+                                            </div>
+                                            <div class="sub-title">
+                                                <h5>Price</h5>
+                                            </div>
+                                            <div class="wrapper-btn">
+                                                <button class="pure-btn">
+                                                    See details
+                                                    <svg width="23" height="15" viewBox="0 0 23 15" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M14.7931 1.9344C14.4026 1.54388 14.4026 0.910712 14.7931 0.520188C15.1837 0.129664 15.8168 0.129664 16.2074 0.520188L22.2073 6.52019C22.5979 6.91071 22.5979 7.54388 22.2073 7.9344L16.2074 13.9344C15.8168 14.3249 15.1837 14.3249 14.7931 13.9344C14.4026 13.5439 14.4026 12.9107 14.7931 12.5202L19.086 8.22728H1.51103C0.952653 8.22728 0.5 7.77956 0.5 7.22728C0.5 6.67499 0.952653 6.22728 1.51103 6.22728H19.086L14.7931 1.9344Z"
+                                                            fill="#E75313" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-menu">
+                                <div class="line">
+                                    <hr>
+                                </div>
+                                <div class="wrapper-menu-2">
+                                    <div class="menu">
+                                        <div class="link">
+                                            <button class="btn-1"><img src="assets/img/Vector-102.svg" alt=""><a
+                                                    href="#">Prev</a></button>
+                                        </div>
+                                        <div class="number">
+                                            <h4 class="h4-sm-primary">1</h4>
+                                            <h4 class="h4-sm-primary">2</h4>
+                                            <h4 class="h4-sm-primary">3</h4>
+                                        </div>
+                                        <div class="link-2">
+                                            <button class="btn-2"><a href="#">Prev</a><img src="assets/img/Vector-3.svg"
+                                                    alt=""></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-advice">
+            <div class="conteiner flex-conteiner">
+                <div class="wrapper-title">
+                    <h2>Our advice</h2>
+                </div>
+                <div class="text-block-1">
+                    <div class="wrapper-img">
+                        <img src="assets/img/pexels-karolina-grabowska-5201881 1.svg" alt="">
+                    </div>
+                    <div class="wrapper-text">
+                        <div class="text">
+                            <h3 class="h3-sm">Headline</h3>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                                quisquam est,
+                                qui dolorem.+
+                            </p>
+                        </div>
+                        <div class="link">
+                            <a class="pure-btn" href="">Read more <img src="assets/img/Vector-1000.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-block-2">
+                    <div class="wrapper-img">
+                        <img src="assets/img/max-muselmann-WcitC-UFFds-unsplash 1.svg" alt="">
+                    </div>
+                    <div class="wrapper-text">
+                        <div class="text">
+                            <h3 class="h3-sm">Headline</h3>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                                quisquam est,
+                                qui dolorem.+
+                            </p>
+                        </div>
+                        <div class="link">
+                            <a class="pure-btn" href="">Read more <img src="assets/img/Vector-1000.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="conteiner flex-conteiner">
+
+                <div class="lenslove">
+                    <div class="wrapper-logo">
+                        <img src="assets/img/LENSLOVE.svg" alt="">
+                    </div>
+                    <div class="wrapper-information">
+                        <div class="wrapper-about">
+                            <ul class="about">
+                                <li>
+                                    <a class="white-a" href="">About us</a>
+                                </li>
+                                <li>
+                                    <a class="white-a" href="">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="wrapper-image">
+                            <img src="assets/img/Instagram.svg" alt="">
+                            <img src="assets/img/Dribbble.svg" alt="">
+                            <img src="assets/img/Twitter.svg" alt="">
+                            <img src="assets/img/Youtube.svg" alt="">
+                        </div>
+                        <div class="wrapper-text">
+                            <p class="white-a">©LensLove 2022. We love glasses!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="wrapper-title">
+                        <h4 class="h4-sm">Info</h4>
+                    </div>
+                    <div class="wrapper-information">
+                        <div class="wrapper-links">
+                            <ul class="links">
+                                <li>
+                                    <a class="a-white" href="">Delivery</a>
+                                </li>
+                                <li>
+                                    <a class="a-white " href="">Warranty</a>
+                                </li>
+                                <li>
+                                    <a class="a-white" href="">Support</a>
+                                </li>
+                                <li>
+                                    <a class="a-white" href="">Sitemap</a>
+                                </li>
+                                <li>
+                                    <a class="a-white" href="">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a class="a-white" href="">Terms&Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shops">
+                    <div class="wrapper-title">
+                        <h4 class="h4-sm">Shops</h4>
+                    </div>
+                    <div class="wrapper-information">
+                        <div class="wrapper-text">
+                            <ul class="berlin">
+                                <li>
+                                    <h5>Berlin</h5>
+                                </li>
+                                <li>
+                                    <h5>L-V:09:30-21:00</h5>
+                                </li>
+                                <li>
+                                    <h5>S:10:00-18:00</h5>
+                                </li>
+                                <li>
+                                    <h5>D:10:00-16:00</h5>
+                                </li>
+                            </ul>
+                            <ul class="frankfurt">
+                                <li>
+                                    <h5>Frankfurt</h5>
+                                </li>
+                                <li>
+                                    <h5>L-V:10:00-20:00</h5>
+                                </li>
+                                <li>
+                                    <h5>S:10:00-16:00</h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help">
+                    <div class="wrapper-title">
+                        <h4 class="h4-sm">Help</h4>
+                    </div>
+                    <div class="wrapper-information">
+                        <div class="wrapper-text">
+                            <ul class="text">
+                                <li>
+                                    <h5>Email: hi@lenslove.com</h5>
+                                </li>
+                                <li>
+                                    <h5>Client Support: </h5>
+                                </li>
+                                <li>
+                                    <h5>support@lenslove.com</h5>
+                                </li>
+                                <li>
+                                    <h5>0371 525 777</h5>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

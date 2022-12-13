@@ -1,0 +1,1745 @@
+@import 'global/typograhpy';
+@import 'settings/reset';
+
+body {
+   margin: 0 auto;
+   max-width: 100%;
+
+   header {
+      width: 100%;
+      height: 203px;
+      display: flex;
+      justify-content: center;
+
+      .container {
+         width: 85%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         .wrapper-logo {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            .wrapper-information {
+               display: flex;
+               flex-direction: row;
+               width: 20%;
+               height: 20px;
+               justify-content: space-around;
+            }
+         }
+
+         .checkbox {
+            display: none;
+         }
+
+         .wrapper-nav {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+
+            .navbar {
+               width: 760px;
+               height: 40px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+            }
+
+            .wrapper-icons {
+               display: flex;
+               flex-direction: row;
+               width: 170.34px;
+               height: 20px;
+               justify-content: space-between;
+
+               .search-icon {
+                  width: 70px;
+                  display: flex;
+                  justify-content: space-evenly;
+                  align-items: center;
+               }
+            }
+         }
+      }
+   }
+
+   main {
+      max-width: 100%;
+
+      .hero {
+         .container {
+            width: 100%;
+            height: 700px;
+            display: flex;
+
+            .wrapper-text {
+               width: 70%;
+               background-color: $pink-color;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+
+               div {
+                  width: 70%;
+                  display: flex;
+                  justify-content: start;
+               }
+
+               button {
+                  margin-top: 50px;
+               }
+            }
+         }
+      }
+
+      .characteristics {
+         .container {
+            width: 100%;
+            height: 284px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .icon {
+               width: 18%;
+               height: 178px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               flex-direction: column;
+
+               .text {
+                  width: 302px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+               }
+            }
+         }
+      }
+
+      .categories {
+         .container {
+            width: 100%;
+            height: 596px;
+            display: flex;
+            justify-content: space-between;
+
+            .optical {
+               background: no-repeat url('../img/pexels-juan-n-gomez-2589653\ 1.png');
+               background-size: cover;
+               width: 49%;
+               padding: 60px;
+               display: flex;
+               flex-direction: column;
+               justify-content: end;
+            }
+
+            .sunwear {
+               background: no-repeat url('../img/daniel-monteiro-iK2MdOKSmj8-unsplash\ 1.png');
+               background-size: cover;
+               width: 49%;
+               padding: 60px;
+               display: flex;
+               flex-direction: column;
+               justify-content: end;
+            }
+         }
+      }
+
+      .popular,
+      .new-products,
+      .sunwear {
+         .container {
+            height: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .card-block {
+               display: flex;
+               width: 72%;
+               justify-content: space-between;
+
+               .card {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+
+                  .card-body {
+                     width: 300px;
+                     display: flex;
+                     flex-direction: column;
+                     align-items: flex-start;
+
+                     .wrapper-btn {
+                        display: flex;
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      .our-advice {
+         margin-top: 100px;
+         width: 100%;
+
+         .conteiner {
+            width: 100%;
+
+            .flex-conteiner {
+               display: flex;
+               flex-direction: column;
+            }
+
+            .wrapper-title {
+               text-align: center;
+            }
+
+            .text-block-1 {
+               display: flex;
+               flex-direction: row;
+               padding-top: 80px;
+               align-items: center;
+               width: 100%;
+
+               .wrapper-img {
+                  width: 100%;
+                  height: 100%;
+
+                  img {
+                     width: 100%;
+                  }
+               }
+
+
+               .wrapper-text {
+                  display: flex;
+                  flex-direction: column;
+                  text-align: left;
+                  align-items: center;
+                  width: 100%;
+
+
+                  .text {
+                     height: 236px;
+                     width: 60%;
+
+                     p {
+                        padding-top: 32px;
+                        width: 75%;
+                     }
+                  }
+
+                  .link {
+                     padding-top: 48px;
+                     width: 60%;
+
+                     a {
+                        color: $orange-color;
+                        text-align: start;
+
+                        img {
+                           padding-left: 9px;
+                        }
+                     }
+                  }
+               }
+            }
+
+            .text-block-2 {
+               display: flex;
+               flex-direction: row-reverse;
+               align-items: center;
+               width: 100%;
+
+               .wrapper-img {
+                  width: 100%;
+                  height: 100%;
+
+                  img {
+                     width: 100%;
+                  }
+               }
+
+               .wrapper-text {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+
+                  .text {
+                     height: 236px;
+                     width: 60%;
+
+                     P {
+                        padding-top: 32px;
+                        width: 75%;
+                     }
+                  }
+
+                  .link {
+                     padding-top: 48px;
+                     width: 60%;
+
+                     a {
+
+                        img {
+                           padding-left: 9px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+
+      .shop {
+         margin-top: 112px;
+
+         .container {
+            display: flex;
+            flex-direction: column;
+
+            .wrapper-title {
+               h2 {
+                  text-align: center;
+               }
+            }
+
+            .wrapper-products {
+               display: flex;
+               margin-top: 80px;
+
+               .filters {
+                  display: flex;
+                  flex-direction: column;
+                  height: 2055px;
+                  width: 210px;
+                  gap: 20px;
+                  margin-left: 99.5px;
+
+                  .checkbox-filters {
+                     display: flex;
+                     flex-direction: column;
+                     gap: 20px;
+
+                  }
+
+                  .wrapper-h4 {
+                     display: flex;
+                     width: 64px;
+                     height: 23px;
+                  }
+
+                  .arrow-checkbox {
+                     display: none;
+                  }
+
+                  .mini-cards {
+                     display: flex;
+                     flex-direction: column;
+                     margin-top: 60px;
+                     gap: 20px;
+
+                     .wrapper-cards-1 {
+                        display: flex;
+                        gap: 10px;
+                        width: 210px;
+                        height: 140px;
+
+
+                        .card-1 {
+                           display: flex;
+
+                           width: 100px;
+                           border-radius: 4px;
+                           padding: 15px;
+                           background: #FFFFFF;
+                           gap: 10px;
+                           justify-content: center;
+                           align-items: center;
+                           flex-direction: column;
+                           box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+
+                           .wrapper-text {
+                              .h6-sm {
+                                 text-align: center;
+                              }
+                           }
+
+                        }
+
+                        .card-2 {
+                           display: flex;
+
+                           width: 100px;
+                           border-radius: 4px;
+                           padding: 15px;
+                           background: #FFFFFF;
+                           gap: 10px;
+                           justify-content: center;
+                           align-items: center;
+                           flex-direction: column;
+                           box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+
+                           .wrapper-text {
+                              .h6-sm {
+                                 text-align: center;
+                              }
+                           }
+
+                        }
+                     }
+
+                     .wrapper-cards-2 {
+                        display: flex;
+                        gap: 10px;
+                        width: 210px;
+                        height: 140px;
+
+                        .card-1 {
+                           display: flex;
+
+                           width: 100px;
+                           border-radius: 4px;
+                           padding: 15px;
+                           background: #FFFFFF;
+                           gap: 10px;
+                           justify-content: center;
+                           align-items: center;
+                           flex-direction: column;
+                           box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+
+                           .wrapper-text {
+                              .h6-sm {
+                                 text-align: center;
+                              }
+                           }
+
+                        }
+
+                        .card-2 {
+                           display: flex;
+
+                           width: 100px;
+                           border-radius: 4px;
+                           padding: 15px;
+                           background: #FFFFFF;
+                           gap: 10px;
+                           justify-content: center;
+                           align-items: center;
+                           flex-direction: column;
+                           box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+
+                           .wrapper-text {
+                              .h6-sm {
+                                 text-align: center;
+                              }
+                           }
+
+                        }
+
+                     }
+
+                     .wrapper-cards-3 {
+                        display: flex;
+                        gap: 10px;
+                        width: 210px;
+                        height: 140px;
+
+                        .card-1 {
+                           display: flex;
+
+                           width: 100px;
+                           border-radius: 4px;
+                           padding: 15px;
+                           background: #FFFFFF;
+                           gap: 10px;
+                           justify-content: center;
+                           align-items: center;
+                           flex-direction: column;
+                           box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+
+                           .wrapper-text {
+                              .h6-sm {
+                                 text-align: center;
+                              }
+                           }
+
+                        }
+
+                        .card-2 {
+                           display: flex;
+
+                           width: 100px;
+                           border-radius: 4px;
+                           padding: 15px;
+                           background: #FFFFFF;
+                           gap: 10px;
+                           justify-content: center;
+                           align-items: center;
+                           flex-direction: column;
+                           box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+
+                           .wrapper-text {
+                              .h6-sm {
+                                 text-align: center;
+                              }
+                           }
+
+                        }
+                     }
+                  }
+
+                  .custom-checkbox-2 {
+                     display: flex;
+                     flex-direction: column;
+                     width: 210px;
+                     height: 360px;
+                     background: #FFFFFF;
+                     box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                     border-radius: 4px;
+
+                     .container {
+                        padding-top: 20px;
+                        padding-left: 20px;
+                        display: flex;
+                        gap: 20px;
+                        flex-direction: column;
+
+                        .wrapper-checkbox {
+
+
+                           .checkbox {
+
+                              form {
+                                 hr {
+                                    color: $primary-color;
+                                    width: 171px;
+                                 }
+
+                                 .wrapper-input {
+                                    display: flex;
+                                    gap: 11px;
+
+                                    .text {
+                                       border-radius: 0;
+                                       background: none;
+                                       color: $primary-color;
+                                       width: 54px;
+                                       height: 15px;
+                                       border: 1px solid $primary-color;
+                                    }
+
+                                    .submit {
+                                       border-radius: 0;
+                                       background: none;
+                                       color: $primary-color;
+                                       width: 15px;
+                                       height: 15px;
+                                       border: 1px solid $primary-color;
+                                       display: flex;
+                                       justify-content: center;
+                                       align-items: center;
+                                       padding: 0;
+                                       color: $primary-color;
+                                    }
+                                 }
+
+                              }
+                           }
+                        }
+                     }
+                  }
+
+                  .custom-checkbox-3 {
+                     display: flex;
+                     flex-direction: column;
+                     width: 210px;
+                     height: 320px;
+                     background: #FFFFFF;
+                     box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                     border-radius: 4px;
+
+                     .container {
+                        padding-top: 20px;
+                        padding-left: 20px;
+                        display: flex;
+                        gap: 20px;
+                        flex-direction: column;
+
+                        .wrapper-title {}
+
+                        .wrapper-checkbox {
+
+
+                           .checkbox {
+
+                              form {
+                                 hr {
+                                    color: $primary-color;
+                                    width: 171px;
+                                 }
+
+                                 .wrapper-buttonlink {
+                                    button {
+                                       display: flex;
+                                       flex-direction: row;
+                                       align-items: center;
+                                       padding: 0;
+                                       gap: 8.36px;
+                                       width: 108.09px;
+                                       height: 17px;
+                                       font-weight: 700;
+                                       font-size: 12px;
+                                       line-height: 17px;
+                                       background: none;
+                                       border: none;
+                                       order: 2;
+                                       color: $primary-color;
+
+                                       a {
+                                          font-size: 12px;
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+
+                  .custom-stars {
+                     display: flex;
+                     flex-direction: column;
+                     width: 210px;
+                     height: 298px;
+                     background: #FFFFFF;
+                     box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                     border-radius: 4px;
+
+                     .container {
+                        padding-top: 20px;
+                        padding-left: 20px;
+                        display: flex;
+                        gap: 20px;
+                        flex-direction: column;
+
+                        .wrapper-stars {
+                           display: flex;
+                           flex-wrap: wrap;
+                           gap: 20px;
+
+                           .stars {
+                              display: flex;
+                              gap: 6px;
+
+                              .star {
+                                 display: flex;
+                              }
+
+                              .text {
+                                 width: 44px;
+                                 display: flex;
+                                 justify-content: flex-end;
+
+                                 h5 {
+
+                                    color: $secondary-color;
+                                 }
+                              }
+                           }
+                        }
+
+
+                     }
+                  }
+
+               }
+
+               .products {
+                  display: flex;
+                  justify-content: center;
+
+                  .container {
+                     display: flex;
+                     flex-direction: column;
+                     align-items: center;
+
+                     .wrapper-menu {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        width: 65%;
+                        height: 71px;
+                        margin-bottom: 32px;
+
+                        .filter-section {
+                           display: flex;
+                           flex-direction: column;
+                           gap: 15px;
+
+                           .wrapper-filters {
+                              display: flex;
+                              gap: 15px;
+                           }
+
+                           .wrapper-results {
+                              .results {
+                                 color: $primary-color;
+                              }
+
+                           }
+                        }
+
+                        .wrapper-sort {
+                           .sort {
+                              display: flex;
+                              flex-direction: row;
+                              align-items: center;
+                              padding: 0;
+                              gap: 8px;
+                              width: 76px;
+                              height: 28px;
+                              font-weight: 400;
+                              font-size: 16px;
+                              line-height: 27px;
+                              background: none;
+                              border: none;
+                              color: $primary-color;
+                           }
+                        }
+                     }
+
+                     .wrapper-cards {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 30px;
+
+                        .cards-block {
+                           width: 75%;
+                           display: flex;
+                           flex-direction: row;
+                           flex-wrap: wrap;
+                           justify-content: space-evenly;
+                        }
+                     }
+
+                     .bottom-menu {
+                        margin-top: 229px;
+
+                        .line {
+                           hr {
+                              width: 927px;
+                           }
+                        }
+
+                        .wrapper-menu-2 {
+                           .menu {
+                              display: flex;
+                              align-items: center;
+                              justify-content: space-between;
+
+                              .btn-1 {
+                                 display: flex;
+                                 align-items: center;
+                                 padding: 0;
+                                 gap: 9px;
+                                 font-weight: 700;
+                                 font-size: 20px;
+                                 line-height: 30px;
+                                 background: none;
+                                 border: none;
+                                 order: 2;
+                                 color: $primary-color;
+                                 justify-content: flex-start;
+                              }
+
+                              .btn-2 {
+                                 display: flex;
+                                 align-items: center;
+                                 padding: 0;
+                                 gap: 9px;
+                                 font-weight: 700;
+                                 font-size: 20px;
+                                 line-height: 30px;
+                                 background: none;
+                                 border: none;
+                                 order: 2;
+                                 color: $primary-color;
+                                 justify-content: flex-end;
+
+                              }
+
+                              .number {
+                                 display: flex;
+                                 gap: 12px;
+
+                                 h4 {
+                                    &:first-child {
+                                       color: black;
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+   }
+}
+
+*,
+*:before,
+*:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.custom-checkbox {
+   display: flex;
+   flex-direction: column;
+   width: 210px;
+   height: 270px;
+   background: #FFFFFF;
+   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+   border-radius: 4px;
+
+   .container {
+      padding-top: 20px;
+      padding-left: 20px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+   }
+}
+
+.checkbox {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+
+   form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+}
+
+.form-group {
+   display: block;
+}
+
+.form-group input {
+   padding: 0;
+   height: initial;
+   width: initial;
+   margin-bottom: 0;
+   display: none;
+   cursor: pointer;
+}
+
+.form-group label {
+   position: relative;
+   cursor: pointer;
+}
+
+.form-group label:before {
+   content: '';
+   -webkit-appearance: none;
+   background-color: transparent;
+   border: 1px solid $primary-color;
+   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+   padding: 8px;
+   display: inline-block;
+   position: relative;
+   vertical-align: middle;
+   cursor: pointer;
+   margin-right: 15px;
+}
+
+.form-group input:checked+label:after {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 5px;
+   left: 7px;
+   width: 6px;
+   height: 10px;
+   border: solid $primary-color;
+   border-width: 0 2px 2px 0;
+   transform: rotate(45deg);
+}
+
+
+.custom-checkbox-2 {
+   display: flex;
+   flex-direction: column;
+   width: 210px;
+   height: 457px;
+   background: #FFFFFF;
+   box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+   border-radius: 4px;
+
+   .container {
+      padding-top: 20px;
+      padding-left: 20px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+
+      .wrapper-checkbox {
+
+
+         .checkbox {
+
+            form {
+               hr {
+                  color: $primary-color;
+                  width: 171px;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+
+footer {
+   background-color: $primary-color;
+   height: 454px;
+   width: 100%;
+
+   .footer {
+      display: flex;
+      justify-content: center;
+
+      .conteiner {
+         padding-top: 96px;
+         height: 262px;
+         width: 80%;
+
+
+         &.flex-conteiner {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+         }
+
+         .lenslove {
+            width: 489px;
+            grid-template-columns: 3fr;
+
+            .wrapper-information {
+               .wrapper-about {
+                  padding-top: 32px;
+                  padding-bottom: 32px;
+               }
+
+               .wrapper-image {
+                  padding-bottom: 32px;
+               }
+            }
+         }
+
+         .info {
+            .wrapper-information {
+               padding-top: 24px;
+
+               .wrapper-links {
+
+
+                  .links {
+                     display: flex;
+                     flex-direction: column;
+                     gap: 10px;
+                  }
+               }
+            }
+         }
+
+         .shops {
+            .wrapper-information {
+               padding-top: 24px;
+
+               .wrapper-text {
+                  .berlin {
+                     display: flex;
+                     flex-direction: column;
+                     gap: 3px;
+                  }
+
+                  .frankfurt {
+                     display: flex;
+                     flex-direction: column;
+                     gap: 0px;
+                     padding-top: 22px;
+                  }
+               }
+            }
+         }
+
+         .help {
+            .wrapper-information {
+               .wrapper-text {
+                  padding-top: 24px;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 1440px) {
+   body {
+      main {
+
+         .popular,
+         .new-products,
+         .sunwear {
+            .container {
+               height: 1250px;
+
+               .card-block {
+                  display: flex;
+                  flex-wrap: wrap;
+                  width: 50%;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1235px) {
+   body {
+      main {
+         .hero {
+            .container {
+               .wrapper-text {
+                  div {
+                     width: 80%;
+                  }
+               }
+            }
+         }
+
+         .popular,
+         .new-products,
+         .sunwear {
+            .container {
+               height: 1500px;
+
+               .card-block {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-evenly;
+                  width: 75%;
+                  height: 800px;
+               }
+            }
+         }
+
+         .our-advice {
+            .conteiner {
+
+               .text-block-1,
+               .text-block-2 {
+                  .wrapper-text {
+                     .text {
+                        p {
+                           width: 100%;
+                           padding-top: 15px;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      footer {
+         .footer {
+            .conteiner {
+               .lenslove {
+                  width: 25%;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 1130px) {
+   body {
+      header {
+         height: 260px;
+
+         .container {
+            height: 260px;
+
+            .wrapper-nav {
+               height: 150px;
+               display: flex;
+               justify-content: space-around;
+               flex-direction: column;
+            }
+         }
+      }
+
+      main {
+         .characteristics {
+            .container {
+               .icon {
+                  svg {
+                     width: 110px;
+                     height: 110px;
+                  }
+               }
+            }
+         }
+
+         .categories {
+            .container {
+               height: 500px;
+               display: flex;
+               flex-direction: row;
+
+               .optical,
+               .sunwear {
+                  background-size: cover;
+                  height: 500px;
+                  overflow: hidden;
+                  padding: 60px;
+
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1050px) {
+   body {
+      header {
+         .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .wrapper-logo {
+               width: 80%;
+
+               .wrapper-information {
+                  width: 33%;
+               }
+            }
+         }
+      }
+
+      main {
+
+         .popular,
+         .new-products,
+         .sunwear {
+            .container {
+               height: 1200px;
+
+               .card-block {
+                  height: 700px;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 950px) {
+   body {
+      main {
+         .hero {
+            .container {
+               display: flex;
+               height: 100%;
+
+               .wrapper-text {
+                  width: 100%;
+                  display: flex;
+                  justify-content: center;
+
+                  div {
+                     button {
+                        width: 170px;
+                     }
+                  }
+               }
+
+               .wrapper-img {
+                  img {
+                     width: 100%;
+                     height: 100%;
+                  }
+               }
+            }
+         }
+
+         .characteristics {
+            .container {
+               .icon {
+                  height: 140px;
+
+                  svg {
+                     width: 100px;
+                     height: 100px;
+                  }
+               }
+            }
+         }
+
+         .categories {
+            width: 100%;
+         }
+
+         .our-advice {
+            .conteiner {
+
+               .text-block-1,
+               .text-block-2 {
+                  .wrapper-text {
+                     .link {
+                        padding-top: 1px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 840px) {
+   body {
+      header {
+         height: 100px;
+         display: flex;
+         justify-content: center;
+
+         .container {
+            width: 100%;
+            height: 100px;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+
+            .checkbox {
+               position: relative;
+               display: flex;
+               height: 50px;
+               width: 10%;
+               z-index: 5;
+               appearance: none;
+               -webkit-appearance: none;
+               -moz-appearance: none;
+               transition: 0.6s ease-in-out;
+               opacity: 1;
+               background: no-repeat url("../img/hamburger-menu-icon.svg");
+               background-size: contain;
+               cursor: pointer;
+            }
+
+            .wrapper-logo {
+               width: 50%;
+               display: flex;
+               align-items: center;
+               justify-content: start;
+               height: 100px;
+
+               .wrapper-information {
+                  position: fixed;
+                  position: absolute;
+                  top: 170px;
+                  background-color: $pink-color;
+                  padding-top: 20px;
+                  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+                  height: 640px;
+                  width: 100%;
+                  transform: translate(-150%);
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  justify-content: space-around;
+                  margin-left: -40px;
+                  padding-left: 50px;
+                  transition: transform 0.5s ease-in-out;
+                  text-align: center;
+                  z-index: 3;
+               }
+            }
+
+            .wrapper-nav {
+               position: fixed;
+               position: absolute;
+               top: 100px;
+               background-color: $pink-color;
+               padding-top: 20px;
+               box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+               height: 640px;
+               width: 100%;
+               transform: translate(-150%);
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               justify-content: space-around;
+               margin-left: -40px;
+               -webkit-box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.24);
+               -moz-box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.24);
+               box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.24);
+               padding-left: 50px;
+               transition: transform 0.5s ease-in-out;
+               text-align: center;
+               z-index: 3;
+
+               .navbar {
+                  display: flex;
+                  flex-direction: column;
+                  height: 400px;
+
+                  a {
+                     margin-bottom: 1.2rem;
+                     font-size: 1.5rem;
+                     font-weight: 500;
+                  }
+               }
+
+               .wrapper-icons {
+                  display: flex;
+                  flex-direction: column;
+                  height: 100px;
+                  justify-content: space-between;
+                  align-items: center;
+               }
+            }
+         }
+      }
+
+      main {
+
+         .popular,
+         .new-products,
+         .sunwear {
+            .container {
+               height: 2000px;
+
+               .card-block {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-evenly;
+                  width: 100%;
+                  height: 1500px;
+
+                  .card {
+                     width: 100%;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+      transform: rotate(45deg);
+   }
+
+   .container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+      transform: scaleY(0);
+   }
+
+   .container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+      transform: rotate(-45deg);
+   }
+
+   .container input[type="checkbox"]:checked~.wrapper-nav {
+      transform: translateX(0);
+   }
+}
+
+
+@media screen and (max-width: 740px) {
+   body {
+      main {
+         .hero {
+            .container {
+               display: flex;
+               flex-direction: column;
+
+               .wrapper-text {
+                  height: 400px;
+               }
+            }
+         }
+
+         .categories {
+            .container {
+               height: 1200px;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+
+               .optical,
+               .sunwear {
+                  width: 100%;
+                  background-size: cover;
+                  height: 50%;
+               }
+            }
+         }
+
+         .our-advice {
+
+            .conteiner {
+
+               .text-block-1,
+               .text-block-2 {
+                  flex-direction: column;
+
+                  .wrapper-text {
+                     height: 500px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                  }
+
+               }
+            }
+
+         }
+      }
+
+      footer {
+         height: 800px;
+
+         .footer {
+            height: 700px;
+
+            .conteiner {
+               width: 75%;
+               display: flex;
+               flex-wrap: wrap;
+               align-items: stretch;
+
+               .lenslove,
+               .info,
+               .shops,
+               .help {
+                  width: 50%;
+                  display: flex;
+                  flex-direction: column;
+                  height: 350px;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+
+@media screen and (max-width: 640px) {
+   body {
+      main {
+         .categories {
+            height: 800px;
+
+            .container {
+               height: 800px;
+            }
+         }
+
+         .characteristics {
+            height: 800px;
+
+            .container {
+               height: 800px;
+               display: flex;
+               flex-direction: column;
+            }
+         }
+      }
+
+      footer {
+         height: 1300px;
+
+         .footer {
+            height: 1300px;
+
+            .conteiner {
+               width: 50%;
+               display: flex;
+               align-items: center;
+               justify-content: space-evenly;
+
+               .lenslove,
+               .info,
+               .shops,
+               .help {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  height: 300px;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 390px) {
+   body {
+      main {
+         .our-advice {
+            .conteiner {
+
+               .text-block-1,
+               .text-block-2 {
+                  .wrapper-text {
+                     height: 550px;
+
+                     .link {
+                        padding-top: 60px;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+// Shop Adaptation //
+
+
+@media screen and (max-width: 1280px) {
+   body {
+      main {
+         .shop {
+            .container {
+               .wrapper-products {
+                  .products {
+                     .container {
+                        .wrapper-menu {
+                           display: flex;
+                           flex-direction: column;
+                           justify-content: start;
+                           width: 75%;
+                           height: 110px;
+
+                           .wrapper-sort {
+                              order: -1;
+
+                           }
+                        }
+
+                        .wrapper-cards {
+                           .cards-block {
+                              width: 80%;
+                              display: flex;
+                              flex-wrap: wrap;
+                              justify-content: start;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1080px) {
+   body {
+      main {
+         .shop {
+            .container {
+               .wrapper-products {
+                  .products {
+                     .container {
+                        .wrapper-menu {
+                           display: flex;
+                           flex-direction: column;
+                           justify-content: start;
+                           width: 90%;
+                           height: 110px;
+                        }
+
+                        .wrapper-cards {
+                           .cards-block {
+                              width: 90%;
+                              display: flex;
+                              flex-wrap: wrap;
+                              justify-content: start;
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 950px) {
+   body {
+      main {
+         .shop {
+            .container {
+               .wrapper-products {
+                  display: flex;
+                  justify-content: space-around;
+
+                  .products {
+                     width: 400px;
+
+                     .container {
+                        .wrapper-menu {
+                           display: flex;
+                           flex-direction: column;
+                           justify-content: space-around;
+                           height: 110px;
+
+                           .wrapper-sort {
+                              order: -1;
+
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 670px) {
+   body {
+      main {
+         .shop {
+            .container {
+               .wrapper-products {
+                  display: flex;
+                  justify-content: space-around;
+
+                  .filters {
+                     margin-left: 10px;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 570px) {
+   body {
+      main {
+         .shop {
+            .container {
+               .wrapper-products {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+
+                  .filters {
+                     width: 375px;
+                     height: 50px;
+                     display: flex;
+                     flex-direction: row;
+                     align-items: center;
+
+                     .checkbox {
+                        position: relative;
+                        display: flex;
+                        height: 13px;
+                        width: 20px;
+                        z-index: 5;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        transition: 0.4s ease-in-out;
+                        opacity: 1;
+                        background: no-repeat url("../img/Sort\ by.svg");
+                        background-size: contain;
+                        cursor: pointer;
+                     }
+
+                     .checkbox-filters {
+                        position: absolute;
+                        height: 2200px;
+                        top: 1550px;
+                        background-color: $pink-color;
+                        padding-top: 20px;
+                        box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+                        width: 100%;
+                        transform: translate(-200%);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: -70px;
+                        -webkit-box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.24);
+                        -moz-box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.24);
+                        box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.24);
+                        transition: transform 0.5s ease-in-out;
+                        text-align: center;
+                        z-index: 3;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .container input[type="checkbox"]:checked {
+      transform: rotate(-90deg);
+   }
+
+   .container input[type="checkbox"]:checked~.checkbox-filters {
+      transform: translateX(0);
+   }
+}
